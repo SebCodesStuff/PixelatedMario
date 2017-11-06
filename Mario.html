@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mario Image</title>
+    <style>
+
+        body{
+            margin: auto;
+            width: 50%;
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border: solid;
+            float: left;
+            display: block
+        }
+
+        wrapper{
+            width: 1853px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <wrapper id="here">
+        <script>
+            for (i=0;i<252;i++)
+            {
+                // Create a <button> element
+                var btn = document.createElement("div");
+                //Create class
+                btn.setAttribute("id",i);
+                btn.setAttribute("class","cornflowerblue")
+
+                // Append the text to <button>
+
+
+                document.getElementById("here").appendChild(btn);
+
+
+                document.body.getElementsByTagName("div")[i].addEventListener("mouseover", myFunction);
+
+
+            }
+
+            function painter(init, final, color)
+            {
+                for (i=init; i<=final; i++)
+                    document.body.getElementsByTagName("div")[i].className=color;
+
+            }
+
+            painter(18,22,"red");
+            painter(31,39,"red");
+            painter(117,117,"red");
+            painter(131,131,"red");
+            painter(134,134,"red");
+            painter(145,148,"red");
+            painter(158,158,"red");
+            painter(160,161,"red");
+            painter(163,163,"red");
+            painter(172,177,"red");
+            painter(185,192,"red");
+            painter(199,201,"red");
+            painter(204,206,"red");
+            painter(45,47,"#642424");
+            painter(45,47,"#642424");
+            painter(50,50,"#642424");
+            painter(58,58,"#642424");
+            painter(60,60,"#642424");
+            painter(64,64,"#642424");
+            painter(72,72,"#642424");
+            painter(74,75,"#642424");
+            painter(79,79,"#642424");
+            painter(86,87,"#642424");
+            painter(92,95,"#642424");
+            painter(115,116,"#642424");
+            painter(118,120,"#642424");
+            painter(128,130,"#642424");
+            painter(132,133,"#642424");
+            painter(135,137,"#642424");
+            painter(141,144,"#642424");
+            painter(149,152,"#642424");
+            painter(157,157,"#642424");
+            painter(164,164,"#642424");
+            painter(212,214,"#642424");
+            painter(219,221,"#642424");
+            painter(225,228,"#642424");
+            painter(233,236,"#642424");
+            painter(159,159,"#FFFF01");
+            painter(162,162,"#FFFF01");
+            painter(48,49,"#F9BF8F");
+            painter(51,51,"#F9BF8F");
+            painter(59,59,"#F9BF8F");
+            painter(61,63,"#F9BF8F");
+            painter(65,67,"#F9BF8F");
+            painter(73,73,"#F9BF8F");
+            painter(76,78,"#F9BF8F");
+            painter(80,82,"#F9BF8F");
+            painter(88,91,"#F9BF8F");
+            painter(101,108,"#F9BF8F");
+            painter(59,59,"#F9BF8F");
+            painter(155,156,"#F9BF8F");
+            painter(155,156,"#F9BF8F");
+            painter(165,166,"#F9BF8F");
+            painter(169,171,"#F9BF8F");
+            painter(178,180,"#F9BF8F");
+            painter(183,184,"#F9BF8F");
+            painter(192,193,"#F9BF8F");
+
+
+
+
+
+
+
+             function myFunction(e) {
+                 function short(color) {
+                     if (e.target.className == color)
+                         e.target.style.backgroundColor = color;
+                 }
+                 short("red");
+                 short("cornflowerblue");
+                 short("#642424");
+                 short("#FFFF01");
+                 short("#F9BF8F");
+
+             }
+
+
+
+
+
+
+        </script>
+    </wrapper>
+<!--Picture is 18 by 14-->
+<!-- Blue is largest color so make that the else clause -->
+
+</body>
+</html>
